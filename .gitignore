@@ -1,27 +1,64 @@
-# Node dependencies
-
-node_modules/
-
+# ==============================
 # Environment variables
-
+# ==============================
 .env
+.env.*
+*.env
 
-# Logs
-
-*.log
+# ==============================
+# Node.js (service-a)
+# ==============================
+node_modules/
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
+# ==============================
+# Python (service-b)
+# ==============================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# ==============================
+# Vector database (Chroma)
+# ==============================
+chroma_storage/
+*.sqlite3
+
+# ==============================
+# Model cache (HuggingFace)
+# ==============================
+.cache/
+.huggingface/
+
+# ==============================
 # OS files
-
+# ==============================
 .DS_Store
 Thumbs.db
 
-# IDE files
-
+# ==============================
+# IDE
+# ==============================
 .vscode/
 .idea/
 
-# Optional
-
-dist/
+# ==============================
+# Python build
+# ==============================
 build/
+dist/
+*.egg-info/
+
+# ==============================
+# Jupyter
+# ==============================
+.ipynb_checkpoints/
